@@ -3,7 +3,7 @@ from utils import get_kecamatan, hitung_estimasi_jarak
 
 def render_halaman_antar(MENU_ITEMS):
     st.title("🛵 Form Pengiriman Pesanan")
-    st.write("Silakan lengkapi data pengiriman Anda. Warteg kami berada di **Kec. Serpong, Kota Tangerang Selatan**.")
+    st.write("Silakan lengkapi data pengiriman Anda. Warteg kami berada di **Cempaka Putih, Jakarta Pusat**.")
     st.divider()
 
     st.subheader("Data Penerima")
@@ -14,9 +14,11 @@ def render_halaman_antar(MENU_ITEMS):
     st.subheader("Alamat Pengiriman")
     
     WILAYAH_LAYANAN = {
-        "Kota Tangerang Selatan": "3674",
-        "Kabupaten Tangerang": "3603",
-        "Kabupaten Bogor": "3201"
+        "Jakarta Pusat": "3173",
+        "Jakarta Barat": "3174",
+        "Jakarta Utara": "3175",
+        "Jakarta Selatan": "3171",
+        "Jakarta Timur": "3172"
     }
     
     pilihan_kabupaten = st.selectbox("Pilih Kota/Kabupaten:", list(WILAYAH_LAYANAN.keys()))
@@ -30,7 +32,7 @@ def render_halaman_antar(MENU_ITEMS):
         alamat_khusus = st.text_area("Detail Alamat Khusus (Jalan, RT/RW, Patokan):", placeholder="Contoh: Perumahan Anggrek No. 2, cat rumah warna putih")
         
         jarak_km = hitung_estimasi_jarak(kab_id, pilihan_kecamatan)
-        TARIF_PER_KM = 1500
+        TARIF_PER_KM = 500
         ongkir = jarak_km * TARIF_PER_KM
         
         st.divider()
