@@ -7,7 +7,7 @@ from antar import render_halaman_antar
 from bayar import render_halaman_bayar
 from status import render_halaman_monitoring
 
-st.set_page_config(page_title=" Warteg Digital Order", layout="centered")
+st.set_page_config(page_title=" Warteg Ika Sari", layout="centered")
 inject_custom_css()
 
 jam_sekarang = datetime.now().hour
@@ -37,7 +37,7 @@ if "jenis_layanan" not in st.session_state:
     st.session_state.jenis_layanan = "ambil"
 
 if st.session_state.halaman == "katalog":
-    st.title("Warteg Digital Order")
+    st.title("Warteg Ika Sari")
     st.write("Pilih menu favoritmu, dan pesan langsung secara online tanpa perlu mengantre!")
     st.divider()
 
