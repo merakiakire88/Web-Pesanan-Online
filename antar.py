@@ -64,7 +64,7 @@ def render_halaman_antar(MENU_ITEMS):
                 
             col_label2, col_val2 = st.columns([3, 1])
             with col_label2:
-                st.write("🛵 **Ongkos Kirim** (Serpong ➡️ " + pilihan_kecamatan.title() + ")")
+                st.write("🛵 **Ongkos Kirim** (Cempaka Putih ➡️ " + pilihan_kecamatan.title() + ")")
             with col_val2:
                 st.write(f"Rp {ongkir:,}")
                 
