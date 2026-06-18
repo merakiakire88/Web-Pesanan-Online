@@ -70,7 +70,7 @@ def generate_struk_html(data_aktif, total_qty, html_items, ongkir_val, diskon_va
     
     <div style="text-align: center; margin-top: 15px;">
         <strong>Total Item: {total_qty} pcs</strong><br>
-        <small>Terima Kasih Atas Kunjungan Anda!</small>
+        <small>Terima Kasih Atas Pembelian Anda!</small>
     </div>
 </div>
 """
