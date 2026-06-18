@@ -46,7 +46,7 @@ def generate_struk_html(data_aktif, total_qty, html_items, ongkir_val, diskon_va
     struk_html = f"""
 <div style="font-family: 'Courier New', Courier, monospace; background-color: #fdfdfd; padding: 20px; border: 1px dashed #777; border-radius: 8px; color: #333; max-width: 400px; margin: 0 auto 20px auto; font-size: 14px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05);">
     <div style="text-align: center; margin-bottom: 15px;">
-        <h3 style="margin: 0; color: #111;">WartegIka Sari</h3>
+        <h3 style="margin: 0; color: #111;">Warteg Ika Sari</h3>
         <small>Cempaka Putih<br>Jakarta Pusat<br>Telp: 0812-3456-7890</small>
     </div>
     
