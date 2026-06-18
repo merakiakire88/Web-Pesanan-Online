@@ -75,9 +75,13 @@ def get_kecamatan(kabupaten_id):
 
 def hitung_estimasi_jarak(kabupaten_id, nama_kecamatan):
     base_jarak = {
-        "3674": 4,  # Tangsel
-        "3603": 12, # Kab Tangerang
-        "3201": 22  # Kab Bogor
+        "3173": 3,   # Jakarta Pusat (Dekat)
+        "3172": 6,   # Jakarta Timur
+        "3175": 8,   # Jakarta Utara
+        "3174": 12,  # Jakarta Barat
+        "3171": 14   # Jakarta Selatan (Paling Jauh)
     }
-    variasi = len(nama_kecamatan) % 6 
-    return base_jarak[kabupaten_id] + variasi
+
+    jarak_awal = base_jarak.get(kabupaten_id, 15)
+    variasi = len(nama_kecamatan) % 5 
+    return jarak_awal + variasi
